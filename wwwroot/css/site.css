@@ -1,0 +1,133 @@
+/* ===== Black & White theme ===== */
+:root {
+  --bs-body-bg: #fff;
+  --bs-body-color: #000;
+  --bs-link-color: #000;
+  --bs-link-hover-color: #333;
+  --bs-border-color: #000;
+  --bs-primary: #000;
+  --bs-primary-rgb: 0, 0, 0;
+  --bs-success: #000;
+  --bs-danger: #000;
+  --bs-warning: #000;
+  --bs-info: #000;
+  --bs-secondary: #fff;
+}
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+  background-color: #fff;
+  color: #000;
+}
+
+a { color: #000; }
+a:hover { color: #444; }
+
+.text-muted { color: #555 !important; }
+.text-danger, .field-validation-error, .validation-summary-errors { color: #000 !important; font-weight: 600; }
+.input-validation-error { border-color: #000 !important; border-width: 2px; }
+
+/* Navbar */
+.navbar.bg-black .navbar-brand,
+.navbar.bg-black .nav-link { color: #fff !important; }
+.navbar.bg-black .nav-link:hover { text-decoration: underline; }
+
+/* Buttons */
+.btn { border-radius: 0.25rem; border-width: 1px; }
+
+.btn-primary,
+.btn-success {
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active,
+.btn-success:hover, .btn-success:focus, .btn-success:active {
+  color: #000;
+  background-color: #fff;
+  border-color: #000;
+}
+
+.btn-secondary,
+.btn-warning,
+.btn-danger {
+  color: #000;
+  background-color: #fff;
+  border-color: #000;
+}
+.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active,
+.btn-warning:hover, .btn-warning:focus, .btn-warning:active,
+.btn-danger:hover, .btn-danger:focus, .btn-danger:active {
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+}
+/* Delete stays visually distinct: bolder border */
+.btn-danger { border-width: 2px; font-weight: 600; }
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus, .form-select:focus {
+  box-shadow: 0 0 0 0.1rem #fff, 0 0 0 0.25rem #000;
+  border-color: #000;
+}
+
+/* Forms */
+.form-control, .form-select {
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
+}
+.form-check-input:checked { background-color: #000; border-color: #000; }
+
+/* Tables */
+.table { --bs-table-bg: #fff; --bs-table-color: #000; --bs-table-border-color: #000; border-color: #000; }
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+  --bs-table-accent-bg: #f2f2f2;
+  color: #000;
+}
+.table-hover > tbody > tr:hover > * {
+  --bs-table-accent-bg: #e0e0e0;
+  color: #000;
+}
+.table-dark, .table-dark > th, .table-dark > td {
+  --bs-table-bg: #000;
+  --bs-table-color: #fff;
+  --bs-table-border-color: #333;
+  background-color: #000;
+  color: #fff;
+}
+
+/* Badges */
+.badge, .badge.bg-success, .badge.bg-danger, .badge.bg-warning, .badge.bg-info {
+  background-color: #000 !important;
+  color: #fff !important;
+  border: 1px solid #000;
+}
+
+/* Alerts */
+.alert, .alert-success, .alert-info, .alert-warning, .alert-danger {
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-left-width: 6px;
+}
+
+/* Misc */
+hr { border-color: #000; opacity: 1; }
+.border-top, .border-bottom { border-color: #000 !important; }
+.footer { background-color: #fff; color: #000; }
+code { color: #000; background: #f2f2f2; padding: 0 .25rem; }
